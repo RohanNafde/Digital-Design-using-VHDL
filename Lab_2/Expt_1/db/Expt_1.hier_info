@@ -1,0 +1,46 @@
+|DUT
+input_vector[0] => Encoder4to2:add_instance.En
+input_vector[1] => Encoder4to2:add_instance.D
+input_vector[2] => Encoder4to2:add_instance.C
+input_vector[3] => Encoder4to2:add_instance.B
+input_vector[4] => Encoder4to2:add_instance.A
+output_vector[0] <= Encoder4to2:add_instance.Y0
+output_vector[1] <= Encoder4to2:add_instance.Y1
+
+
+|DUT|Encoder4to2:add_instance
+A => OR_2:OR1.A
+A => OR_2:OR2.A
+B => OR_2:OR1.B
+C => OR_2:OR2.B
+D => ~NO_FANOUT~
+En => AND_2:AND1.B
+En => AND_2:AND2.B
+Y1 <= AND_2:AND1.Y
+Y0 <= AND_2:AND2.Y
+
+
+|DUT|Encoder4to2:add_instance|OR_2:OR1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Encoder4to2:add_instance|OR_2:OR2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Encoder4to2:add_instance|AND_2:AND1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Encoder4to2:add_instance|AND_2:AND2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

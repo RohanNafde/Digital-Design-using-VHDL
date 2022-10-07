@@ -1,0 +1,23 @@
+
+State Machine - |TopLevel|DUT:dut_instance|word_detection:add_instance|p_broom
+Name p_broom.broom p_broom.broo p_broom.bro p_broom.br p_broom.b p_broom.rst_broom 
+p_broom.rst_broom 0 0 0 0 0 0 
+p_broom.b 0 0 0 0 1 1 
+p_broom.br 0 0 0 1 0 1 
+p_broom.bro 0 0 1 0 0 1 
+p_broom.broo 0 1 0 0 0 1 
+p_broom.broom 1 0 0 0 0 1 
+
+State Machine - |TopLevel|DUT:dut_instance|word_detection:add_instance|p_cry
+Name p_cry.cry p_cry.cr p_cry.c p_cry.rst_cry 
+p_cry.rst_cry 0 0 0 0 
+p_cry.c 0 0 1 1 
+p_cry.cr 0 1 0 1 
+p_cry.cry 1 0 0 1 
+
+State Machine - |TopLevel|DUT:dut_instance|word_detection:add_instance|p_run
+Name p_run.run p_run.ru p_run.r p_run.rst_run 
+p_run.rst_run 0 0 0 0 
+p_run.r 0 0 1 1 
+p_run.ru 0 1 0 1 
+p_run.run 1 0 0 1 

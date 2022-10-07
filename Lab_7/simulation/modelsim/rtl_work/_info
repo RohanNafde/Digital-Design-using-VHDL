@@ -1,0 +1,324 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/IIT/EE/Labs/Lab_7/simulation/modelsim
+Edff_reset
+Z1 w1664448227
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 3
+R0
+Z4 8C:/IIT/EE/Labs/Lab_7/Sequence.vhd
+Z5 FC:/IIT/EE/Labs/Lab_7/Sequence.vhd
+l0
+L39 1
+Vo:OA?cU0D;<VR:;7f`CVH1
+!s100 djX7W:emoIIXRB2YT5aYz0
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1664449823
+!i10b 1
+Z8 !s108 1664449823.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/IIT/EE/Labs/Lab_7/Sequence.vhd|
+Z10 !s107 C:/IIT/EE/Labs/Lab_7/Sequence.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abehav
+R2
+R3
+DEx4 work 9 dff_reset 0 22 o:OA?cU0D;<VR:;7f`CVH1
+!i122 3
+l45
+L43 12
+VFHkNMFKHJnR1NQ7CU]R6i2
+!s100 afj>jKR=Db]KfPV9zZ<ED3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edff_set
+R1
+R2
+R3
+!i122 3
+R0
+R4
+R5
+l0
+L18 1
+V=4Kaea::XWgZ9<iT?[Obh1
+!s100 <MC9>0[aJfSQ5=SnI0ZQI0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehav
+R2
+R3
+DEx4 work 7 dff_set 0 22 =4Kaea::XWgZ9<iT?[Obh1
+!i122 3
+l24
+L22 12
+V`aQ`z4Ji696XSHfo8L2h:1
+!s100 A]icYXnGUek^RFMEX00>l0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edut
+Z13 w1664448122
+R2
+R3
+!i122 2
+R0
+Z14 8C:/IIT/EE/Labs/Lab_7/DUT.vhd
+Z15 FC:/IIT/EE/Labs/Lab_7/DUT.vhd
+l0
+L7 1
+V@d46SC>6F83HUKneTU63K2
+!s100 E58GgVo?XFAH:^PkSEKYP1
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/IIT/EE/Labs/Lab_7/DUT.vhd|
+Z17 !s107 C:/IIT/EE/Labs/Lab_7/DUT.vhd|
+!i113 1
+R11
+R12
+Adutwrap
+R2
+R3
+DEx4 work 3 dut 0 22 @d46SC>6F83HUKneTU63K2
+!i122 2
+l17
+L11 16
+Ve4>CM1bWO[d`X?>5MEL5N3
+!s100 fQ0A_H9l<8Af0E@A<C`PS2
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Pflipflops
+R2
+R3
+!i122 3
+R1
+R0
+R4
+R5
+l0
+L4 1
+Vni`kL?XmOn?Q[gCkofkN=0
+!s100 LGg=X8SmHlKPb7z?:A3Pg3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Esequence_generator_stru_dataflow
+R1
+R2
+R3
+!i122 3
+R0
+R4
+R5
+l0
+L59 1
+VjU25V71BRMEoQ=[lnclTo2
+!s100 MX<ZzlXHzkd7dW_H_;gNC1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Astruct
+R2
+R3
+DEx4 work 32 sequence_generator_stru_dataflow 0 22 jU25V71BRMEoQ=[lnclTo2
+!i122 3
+l70
+L63 22
+V_dHfUfDYR8:mnO:f2UWOj2
+!s100 D@?84fb438??cd25k^G_M0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Etestbench
+Z18 w1664447883
+R3
+R2
+!i122 4
+R0
+Z19 8C:/IIT/EE/Labs/Lab_7/Testbench.vhd
+Z20 FC:/IIT/EE/Labs/Lab_7/Testbench.vhd
+l0
+L7 1
+V]iKK_Z9L:G9B:i8c]3eFH0
+!s100 bWf8kl8zb90X@P1m>V^K20
+R6
+31
+R7
+!i10b 1
+R8
+Z21 !s90 -reportprogress|300|-93|-work|work|C:/IIT/EE/Labs/Lab_7/Testbench.vhd|
+!s107 C:/IIT/EE/Labs/Lab_7/Testbench.vhd|
+!i113 1
+R11
+R12
+Abehave
+R3
+R2
+DEx4 work 9 testbench 0 22 ]iKK_Z9L:G9B:i8c]3eFH0
+!i122 4
+l69
+L9 132
+V>]NX9`dln_bCgbc9;YCoW0
+!s100 [Ac[M2SOdaeGIlfL>LBlY1
+R6
+31
+R7
+!i10b 1
+R8
+R21
+Z22 !s107 C:/IIT/EE/Labs/Lab_7/Testbench.vhd|
+!i113 1
+R11
+R12
+Etoplevel
+Z23 w1664448988
+Z24 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R2
+R3
+!i122 1
+R0
+Z25 8C:/IIT/EE/Labs/Lab_7/TopLevel.vhdl
+Z26 FC:/IIT/EE/Labs/Lab_7/TopLevel.vhdl
+l0
+L5 1
+VRW=hg7X2^>c3bX1h9KmmK0
+!s100 gJ^gg3F;Qe=>jcbTR:JjO3
+R6
+31
+R7
+!i10b 1
+R8
+Z27 !s90 -reportprogress|300|-93|-work|work|C:/IIT/EE/Labs/Lab_7/TopLevel.vhdl|
+Z28 !s107 C:/IIT/EE/Labs/Lab_7/TopLevel.vhdl|
+!i113 1
+R11
+R12
+Astruct
+R24
+R2
+R3
+DEx4 work 8 toplevel 0 22 RW=hg7X2^>c3bX1h9KmmK0
+!i122 1
+l75
+L13 146
+V32RB<gRRn7a7IQAnN8EGK1
+!s100 a`1c?22oKNPD91BY`hzAE1
+R6
+31
+R7
+!i10b 1
+R8
+R27
+R28
+!i113 1
+R11
+R12
+Ev_jtag
+Z29 w1623670142
+R24
+R2
+R3
+!i122 0
+R0
+Z30 8C:/IIT/EE/Labs/Lab_7/v_jtag.vhd
+Z31 FC:/IIT/EE/Labs/Lab_7/v_jtag.vhd
+l0
+L9 1
+VK7J:B[m3^:cB1Km[I3N602
+!s100 C:GMYKMFIUkIMaKNS>ek<2
+R6
+31
+R7
+!i10b 1
+R8
+Z32 !s90 -reportprogress|300|-93|-work|work|C:/IIT/EE/Labs/Lab_7/v_jtag.vhd|
+Z33 !s107 C:/IIT/EE/Labs/Lab_7/v_jtag.vhd|
+!i113 1
+R11
+R12
+Artl
+R24
+R2
+R3
+DEx4 work 6 v_jtag 0 22 K7J:B[m3^:cB1Km[I3N602
+!i122 0
+l85
+L44 83
+VJODH=ZQLe0=R51Pn2gWGM3
+!s100 QN^;ea;8E9NBL5]J::=Mk2
+R6
+31
+R7
+!i10b 1
+R8
+R32
+R33
+!i113 1
+R11
+R12

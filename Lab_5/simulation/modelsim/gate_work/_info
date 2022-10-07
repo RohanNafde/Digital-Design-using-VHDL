@@ -1,0 +1,38 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/IIT/EE/Labs/Lab_5/simulation/modelsim
+Etoplevel
+w1662027242
+DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 OTUTkBjTeYVegmIWhVi3N0
+DPx11 fiftyfivenm 22 fiftyfivenm_components 0 22 C5K^h=:j[4HI?HO^UkN3:2
+DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+DPx6 altera 11 dffeas_pack 0 22 dc5N=DKXMMTVYdUQ@D3FA2
+DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+DPx6 altera 28 altera_primitives_components 0 22 ca:ehlQAg4;_gVV:^8MAg3
+!i122 0
+R0
+8Expt_1.vho
+FExpt_1.vho
+l0
+L37 1
+Vg<Czd4^kdIhzea2;975>l1
+!s100 kL4oCPhML2FZA4kamn9^70
+OV;C;2020.1;71
+31
+!s110 1662353483
+!i10b 1
+!s108 1662353483.000000
+!s90 -reportprogress|300|-93|-work|work|Expt_1.vho|
+!s107 Expt_1.vho|
+!i113 1
+o-93 -work work
+tExplicit 1 CvgOpt 0
