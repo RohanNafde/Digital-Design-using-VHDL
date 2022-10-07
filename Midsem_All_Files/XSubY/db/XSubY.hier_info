@@ -1,0 +1,162 @@
+|DUT
+input_vector[0] => Sub:add_instance.Y0
+input_vector[1] => Sub:add_instance.Y1
+input_vector[2] => Sub:add_instance.Y2
+input_vector[3] => Sub:add_instance.Y3
+input_vector[4] => Sub:add_instance.X0
+input_vector[5] => Sub:add_instance.X1
+input_vector[6] => Sub:add_instance.X2
+input_vector[7] => Sub:add_instance.X3
+output_vector[0] << Sub:add_instance.O0
+output_vector[1] << Sub:add_instance.O1
+output_vector[2] << Sub:add_instance.O2
+output_vector[3] << Sub:add_instance.O3
+
+
+|DUT|Sub:add_instance
+X3 => FULL_ADDER:FA_3.B
+X2 => FULL_ADDER:FA_2.B
+X1 => FULL_ADDER:FA_1.B
+X0 => FULL_ADDER:FA_0.B
+Y3 => INVERTER:NOT3.A
+Y2 => INVERTER:NOT2.A
+Y1 => INVERTER:NOT1.A
+Y0 => INVERTER:NOT0.A
+O3 <= FULL_ADDER:FA_3.S
+O2 <= FULL_ADDER:FA_2.S
+O1 <= FULL_ADDER:FA_1.S
+O0 <= FULL_ADDER:FA_0.S
+
+
+|DUT|Sub:add_instance|INVERTER:NOT3
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Sub:add_instance|INVERTER:NOT2
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Sub:add_instance|INVERTER:NOT1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Sub:add_instance|INVERTER:NOT0
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Sub:add_instance|FULL_ADDER:FA3
+A => S.IN0
+A => Co.IN0
+A => Co.IN0
+B => S.IN1
+B => Co.IN1
+B => Co.IN0
+Ci => S.IN1
+Ci => Co.IN1
+Ci => Co.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Sub:add_instance|FULL_ADDER:FA2
+A => S.IN0
+A => Co.IN0
+A => Co.IN0
+B => S.IN1
+B => Co.IN1
+B => Co.IN0
+Ci => S.IN1
+Ci => Co.IN1
+Ci => Co.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Sub:add_instance|FULL_ADDER:FA1
+A => S.IN0
+A => Co.IN0
+A => Co.IN0
+B => S.IN1
+B => Co.IN1
+B => Co.IN0
+Ci => S.IN1
+Ci => Co.IN1
+Ci => Co.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Sub:add_instance|FULL_ADDER:FA0
+A => S.IN0
+A => Co.IN0
+A => Co.IN0
+B => S.IN1
+B => Co.IN1
+B => Co.IN0
+Ci => S.IN1
+Ci => Co.IN1
+Ci => Co.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Sub:add_instance|FULL_ADDER:FA_3
+A => S.IN0
+A => Co.IN0
+A => Co.IN0
+B => S.IN1
+B => Co.IN1
+B => Co.IN0
+Ci => S.IN1
+Ci => Co.IN1
+Ci => Co.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Sub:add_instance|FULL_ADDER:FA_2
+A => S.IN0
+A => Co.IN0
+A => Co.IN0
+B => S.IN1
+B => Co.IN1
+B => Co.IN0
+Ci => S.IN1
+Ci => Co.IN1
+Ci => Co.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Sub:add_instance|FULL_ADDER:FA_1
+A => S.IN0
+A => Co.IN0
+A => Co.IN0
+B => S.IN1
+B => Co.IN1
+B => Co.IN0
+Ci => S.IN1
+Ci => Co.IN1
+Ci => Co.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Sub:add_instance|FULL_ADDER:FA_0
+A => S.IN0
+A => Co.IN0
+A => Co.IN0
+B => S.IN1
+B => Co.IN1
+B => Co.IN0
+Ci => S.IN1
+Ci => Co.IN1
+Ci => Co.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
