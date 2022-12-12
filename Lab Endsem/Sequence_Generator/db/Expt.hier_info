@@ -1,0 +1,15 @@
+|DUT
+input_vector[0] => seq_gen:add_instance.clock_50
+input_vector[1] => seq_gen:add_instance.reset
+output_vector[0] << seq_gen:add_instance.y
+
+
+|DUT|seq_gen:add_instance
+reset => p.OUTPUTSELECT
+reset => p.OUTPUTSELECT
+reset => p.OUTPUTSELECT
+reset => p.OUTPUTSELECT
+clock_50 => p~1.DATAIN
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+

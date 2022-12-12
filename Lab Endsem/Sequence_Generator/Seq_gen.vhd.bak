@@ -1,0 +1,80 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+package Flipflops is
+	component dff_set is
+		port(D, clock,set:in std_logic;Q:out std_logic);
+	end component dff_set;
+
+	component dff_reset is
+		port(D, clock,reset:in std_logic;Q:out std_logic);
+	end component dff_reset;
+end package Flipflops;
+
+--D flip flop with set
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity dff_set is
+	port(D, clock,set:in std_logic;Q:out std_logic);
+end entity dff_set;
+
+architecture behav of dff_set is
+
+begin
+	dff_set_proc: process (clock,set)
+	begin
+	if(set='1')then -- set implies flip flip output logic high
+		Q <= '1'; -- write the flip flop output when set
+	elsif (clock'event and (clock='1')) then
+		Q <= D; -- write flip flop output when not set
+	end if ;
+	end process dff_set_proc;
+end behav;
+--D flip flop with reset
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity dff_reset is
+	port(D,clock,reset:in std_logic;Q:out std_logic);
+end entity dff_reset;
+
+architecture behav of dff_reset is
+
+begin
+	dff_reset_proc: process (clock,reset)
+	begin
+	if(reset='1')then -- reset implies flip flip output logic low
+		Q <= '0'; -- write the flip flop output when reset
+	elsif (clock'event and (clock='1')) then
+		Q <= D; -- write flip flop output when not reset
+	end if ;
+	end process dff_reset_proc;
+end behav;
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Sequence_generator_stru_dataflow is
+	port (reset,clock: in std_logic; y:out std_logic);
+end entity Sequence_generator_stru_dataflow;
+
+architecture struct of Sequence_generator_stru_dataflow is
+	signal D2, D1, D0, Q2, Q1, Q0: std_logic;
+	
+	component dff_reset is
+		port(D,clock,reset:in std_logic; Q:out std_logic);
+	end component dff_reset;
+	
+begin
+	FF2: dff_reset port map(D => D2, clock => clock, reset => reset, Q => Q2);
+	FF1: dff_reset port map(D => D1, clock => clock, reset => reset, Q => Q1);
+	FF0: dff_reset port map(D => D0, clock => clock, reset => reset, Q => Q0);
+	
+	y <= (not Q1);
+	
+	D2 <= (Q1 and Q0) or (Q2 and (not Q0));
+	D1 <= ((not Q2) and (not Q1) and Q0) or (Q1 and (not Q0));
+	D0 <= (not Q0);
+end struct;

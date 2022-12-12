@@ -1,0 +1,11 @@
+
+State Machine - |server|p
+Name p.admin_req p.prof_req p.res_req p.admin p.prof p.res p.stu p.idle 
+p.idle 0 0 0 0 0 0 0 0 
+p.stu 0 0 0 0 0 0 1 1 
+p.res 0 0 0 0 0 1 0 1 
+p.prof 0 0 0 0 1 0 0 1 
+p.admin 0 0 0 1 0 0 0 1 
+p.res_req 0 0 1 0 0 0 0 1 
+p.prof_req 0 1 0 0 0 0 0 1 
+p.admin_req 1 0 0 0 0 0 0 1 

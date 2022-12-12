@@ -1,0 +1,7 @@
+
+State Machine - |DUT|seq_gen:add_instance|p
+Name p.S3 p.S2 p.S1 p.RST 
+p.RST 0 0 0 0 
+p.S1 0 0 1 1 
+p.S2 0 1 0 1 
+p.S3 1 0 0 1 

@@ -1,0 +1,38 @@
+|Server
+inp[0] => n.DATAA
+inp[0] => n.DATAA
+inp[1] => n.OUTPUTSELECT
+inp[1] => n.OUTPUTSELECT
+inp[1] => n.DATAA
+inp[1] => n.DATAA
+inp[2] => n.OUTPUTSELECT
+inp[2] => n.OUTPUTSELECT
+inp[2] => n.OUTPUTSELECT
+inp[2] => n.DATAA
+inp[2] => n.OUTPUTSELECT
+inp[2] => n.DATAA
+inp[3] => n.OUTPUTSELECT
+inp[3] => n.OUTPUTSELECT
+inp[3] => n.OUTPUTSELECT
+inp[3] => n.OUTPUTSELECT
+inp[3] => n.OUTPUTSELECT
+inp[3] => n.OUTPUTSELECT
+inp[3] => Selector4.IN4
+inp[3] => n.admin_req.DATAB
+inp[3] => Selector0.IN5
+clock => p~1.DATAIN
+reset => p.OUTPUTSELECT
+reset => p.OUTPUTSELECT
+reset => p.OUTPUTSELECT
+reset => p.OUTPUTSELECT
+reset => p.OUTPUTSELECT
+reset => p.OUTPUTSELECT
+reset => p.OUTPUTSELECT
+reset => p.OUTPUTSELECT
+outp[0] <= WideOr8.DB_MAX_OUTPUT_PORT_TYPE
+outp[1] <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
+outp[2] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+outp[3] <= outp.DB_MAX_OUTPUT_PORT_TYPE
+outp[4] <= outp[4].DB_MAX_OUTPUT_PORT_TYPE
+
+

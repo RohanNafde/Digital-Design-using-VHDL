@@ -1,0 +1,10 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Serial_Adder is
+	port (reset, a, b, clock: in std_logic; s: out std_logic);
+end entity;
+
+architecture BHV of Serial_Adder is
+	
+end BHV;
